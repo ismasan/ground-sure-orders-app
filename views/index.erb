@@ -1,0 +1,6 @@
+<h1>Normal html</h1>
+<ul>
+  <% @items.each.with_index do |item, index| %>
+    <h3><a href="/items/<%= index %>"><%= item["product"] %></a></h3>
+  <% end %>
+</ul>
